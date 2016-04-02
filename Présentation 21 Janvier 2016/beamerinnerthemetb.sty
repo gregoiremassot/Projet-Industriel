@@ -1,0 +1,82 @@
+% Author : Nicolas Moulin
+
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\ProcessOptionsBeamer
+
+\defbeamertemplate*{title page}{information}[1][]
+{
+	% Logo
+	\begin{textblock*}{2cm}(0.0cm,4.5cm)
+		\begin{beamercolorbox}[sep=2pt, wd=2cm, ht=10pt, left, ignorebg, #1]{titlepage}
+			\includegraphics[width=2.5cm, keepaspectratio]{Modele/mines_saint-etienne}
+		\end{beamercolorbox}
+	\end{textblock*}
+
+
+	% Logo
+	\begin{textblock*}{3cm}(3cm,9cm)
+		\begin{beamercolorbox}[sep=2pt, wd=2cm, ht=10pt, left, ignorebg, #1]{titlepage}
+			\includegraphics[width=6cm, keepaspectratio]{Modele/mines_saint-etienne_baseline}
+		\end{beamercolorbox}
+	\end{textblock*}
+
+	% Texte
+	\begin{textblock*}{7.3cm}(3.7cm,4.6cm)
+		\begin{flushleft}
+			% Titre
+			\begin{beamercolorbox}[wd=9cm, ht=5pt, left, ignorebg, #1]{titlepage}
+%				\usebeamerfont{title}
+				\huge{\textbf{\inserttitle}}
+			\end{beamercolorbox}
+			% Auteur
+			\vspace{.5cm}
+			\hspace{-5pt}
+			\begin{beamercolorbox}[sep=0pt, wd=8cm, ht=5pt, left, ignorebg, #1]{titlepage}
+				\usebeamerfont{author}
+				\insertauthor
+			\end{beamercolorbox}
+			
+			% Institute
+			\vspace{.5cm}
+			\hspace{-5pt}
+			\begin{beamercolorbox}[sep=0pt, wd=8cm, ht=5pt, left, ignorebg, #1]{titlepage}
+			\usebeamerfont{author}
+				\insertinstitute
+			\end{beamercolorbox}
+		\end{flushleft}
+					% Date
+			\hspace{-90pt}
+			\begin{beamercolorbox}[sep=0pt, wd=8cm, ht=5pt, left, ignorebg, #1]{titlepage}
+			\usebeamerfont{author}
+				\insertdate				
+			\end{beamercolorbox}
+
+	\end{textblock*}
+	% Barre tricolore
+	\begin{textblock*}{7.8cm}(4.2cm,8.5cm)
+		\begin{beamercolorbox}[sep=2pt, wd=2cm, ht=10pt, left, ignorebg, #1]{titlepage}
+			\input{Modele/barre_tricolore_garde.tex}
+		\end{beamercolorbox}
+	\end{textblock*}
+}
+
+\mode<presentation>
+
+%Commande de titre
+\newcommand{\inserttitlepage}[0]{
+	\frame[plain]{\titlepage}
+}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[default]
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{title page}[information][]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+
+
+
+
+\mode<all>

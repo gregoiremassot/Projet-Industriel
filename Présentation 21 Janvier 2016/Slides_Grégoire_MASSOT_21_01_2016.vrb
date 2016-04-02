@@ -1,0 +1,9 @@
+\frametitle{Code R - Visualisation des résultats}
+ \begin{lstlisting}
+# feature importance
+
+names <- dimnames(predicteurs_Train)[[2]]
+importance_matrix <- xgb.importance(names, model = modelXgboost)
+xgb.plot.importance(importance_matrix)
+xgb.plot.tree(feature_names = names, model = modelXgboost, n_first_tree = 2)
+ \end{lstlisting}
