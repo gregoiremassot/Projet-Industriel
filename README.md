@@ -1,2 +1,1 @@
-##[Rapport](https://github.com/gregoiremassot/Projet-Industriel/blob/master/Rapport%2025%20Janvier%202016/Rapport_Projet_Industriel_25_Janvier_2016.pdf)
-## [Slides de la soutenance](https://github.com/gregoiremassot/Projet-Industriel/blob/master/Pr%C3%A9sentation%2021%20Janvier%202016/Slides_Gr%C3%A9goire_MASSOT_21_01_2016.pdf)
+#[Page d'accueil](https://github.com/gregoiremassot/Projet-Industriel/wiki/Bienvenue-sur-le-d%C3%A9p%C3%B4t-%22Pr%C3%A9diction-des-dur%C3%A9es-d'hospitalisation-aux-h%C3%B4pitaux-de-Lyon%22-!) / [Home page](https://github.com/gregoiremassot/Projet-Industriel/wiki/Welcome-to-the-repository-%22Forecasting-the-durations-of-hospitalizations-in-Lyon%22-!)
